@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title> <?= $titre ?> </title>
-	<link rel="stylesheet" type="text/css" href="<?= site_url() . CSS_DIR . 'styles.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?= site_url() . CSS_DIR . 'style.css'; ?>">
 </head>
 <body>
-	<div id="page">
+	<div id="page" class="ajaxBox">
 		<div id="header">
 			<h1><?= $titre ?></h1>
 		</div>
@@ -28,6 +28,6 @@
 	</div>
 	
 	<script src='<?php echo site_url(); ?>web/js/jquery.js'></script>
-	<script src='<?php echo site_url(); ?>web/js/code.js'></script>
+	<script src='<?php echo site_url(); ?>web/js/script.js'></script>
 </body>
 </html>

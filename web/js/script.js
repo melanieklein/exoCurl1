@@ -50,6 +50,8 @@ $(function(){
 			//ajoute attribut checked avec valeur checked au bouton radio
 			$nextImage.children('div').children('input').attr("checked", "checked");
 	}
+
+	
 	
 });
 

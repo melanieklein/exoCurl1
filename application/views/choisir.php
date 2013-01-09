@@ -45,7 +45,7 @@
           <?php endforeach; ?>
           
       </ul> 
-          <?
+          <?php
           $data = array(
                 'name'        => 'mysubmit',
                 'value'          => 'Partager',
