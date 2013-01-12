@@ -66,7 +66,7 @@
 				'max_size' => 7000,
 				);
 			$this->load->library('upload',$config);
-			$this->upload->initialize($config);
+			//$this->upload->initialize($config);
 			$this->upload->do_upload();
 			$image_data = $this->upload->data();
 
