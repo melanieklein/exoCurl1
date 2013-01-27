@@ -36,7 +36,7 @@
         <?php endforeach;?>
         <?= form_hidden('id',$unLien->id);?>
     </ul>
-        <? 
+        <?php 
         $data = array(
                 'name'        => 'mysubmit',
                 'value'          => 'Modifier',
@@ -44,5 +44,5 @@
                 );
 
         echo form_submit($data); ?>
-        <?= form_close() ?>
+        <?= form_close(); ?>
 </div>

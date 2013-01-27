@@ -194,6 +194,13 @@ ET STYLE DE LA VUE AJOUTER - ajouter.php */
   color: #669999;
   background-color: #D9D9D9;
 }
+#registration {
+  display: block;
+  color: #669999;
+}
+#registration:hover {
+  color: #D9D9D9;
+}
 /*STYLE DE LA VUE AFFICHER - afficher.php*/
 .fiche {
   width: 50%;

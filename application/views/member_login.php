@@ -38,7 +38,6 @@
 	//Fermeture du formulaire
 	form_close(); ?>
 	</div>
-	<p>Tu n'as pas encore de compte&nbsp;? <a href="#">Inscris-toi&nbsp;!</a></p>
 	<?= anchor(	'membre/registration',
 						's\'inscrire',
 						array(
