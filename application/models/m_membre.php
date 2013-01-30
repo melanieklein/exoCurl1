@@ -14,7 +14,7 @@
 			return $query->num_rows();
 		}
 
-			public function inscrire($data){		
+		public function inscrire($data){		
 
 			$value = array(
 				'email' => $data['email'],
@@ -39,12 +39,9 @@
 		{
 			$this->db->select('*');
 			$this->db->from('membres');
-			$this->db->where('email',$email);
-
 			$query = $this->db->get();
-			return $query->row();
+			return $query->result();
 		}
-
 
 	}
 	
