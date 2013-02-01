@@ -124,6 +124,8 @@ ul {
   color: #669999;
   font-size: 3em;
   text-shadow: 1px 1px 0px white;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
 }
 #contenu {
   margin: 0 auto;

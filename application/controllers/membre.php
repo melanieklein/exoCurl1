@@ -45,6 +45,16 @@
 			}
 		}
 
+		public function afficher() {
+		$this->load->model('M_Membre');
+
+		$dataFiche['membres'] = $this->M_Membre->afficher($data);
+
+		$dataLayout['titre'] = "Share your links";
+        $dataLayout['vue'] = $this->load->view('ajouter',$dataFiche, TRUE);
+        $this->load->view('layout',$dataLayout); 
+    	}
+
 		public function registration() {
 			$this->load->helper('form');
 			$this->load->model('M_Membre');

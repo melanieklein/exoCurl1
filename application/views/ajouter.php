@@ -1,4 +1,8 @@
-<p class="intro">Tu peux maintenant partager tes liens&nbsp;!</p>
+
+<?php foreach ($membres as $membre): ?>
+
+<p class="intro">Salut <?= $membre->pseudo; ?> Tu peux maintenant partager tes liens&nbsp;!</p>
+<?php endforeach; ?>
 <div id="formAdd">
 <?= form_open('lien/choisir'); ?>
 <?php 
