@@ -71,6 +71,10 @@ li, ul {
     list-style-type: none;
 }
 
+.titreOutliner {
+    display: none;
+}
+
 #page {
     max-width: 78em;
     min-width: 64em;
@@ -82,14 +86,27 @@ li, ul {
     margin: 0 auto;
     width: 29em;
 }
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 14em;
+    display: block;
+}
 
-#header h1 {
+#header a {
     font-family:'firsttestRegular';
     color: #669999;
     font-size: 3em;
     text-shadow: 1px 1px 0px white;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
+    background-size: 45px 45px;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 1.2em;
+    text-decoration: none;
+    &:hover {
+        color: #336666;
+        background-image: url('../images/logoH.png');
+    }
 }
 
 #contenu {
@@ -112,7 +129,7 @@ li, ul {
     text-align: right;
     width:25em;
     &:hover {
-        color: #888888;
+        color: #336666;
     }
 }
 
@@ -124,6 +141,20 @@ ET STYLE DE LA VUE AJOUTER - ajouter.php */
     font-size:1.5em;
     text-transform: uppercase;
     margin-bottom:1em;
+    em {
+        font-style: normal;
+        font-size: 0.8em;
+        color: #669999;
+        font-family: 'GreyscaleBasicRegular';
+        text-transform: lowercase;
+    }
+
+    a {
+        color: #669999;
+        &:hover {
+            color: #336666;
+        }
+    }
 }
 
 #formRegister, #formAdd, #formChoose, #formModify, #formSignin {
@@ -170,7 +201,7 @@ ET STYLE DE LA VUE AJOUTER - ajouter.php */
     display: block;
     color: #669999;
     &:hover {
-        color: #D9D9D9;
+        color: #336666;
     }
 }
 
@@ -208,7 +239,7 @@ ET STYLE DE LA VUE AJOUTER - ajouter.php */
     display:none;
 }
 #formChoose button {
-    padding:0.2;
+    padding:0.2em;
     color: #FFFFFF;
     background-color: #669999;
     border:none;
@@ -277,4 +308,67 @@ color: #669999;
 #formModify ul {
     display: inline-block;
     width: 24em;
+}
+
+
+/*--------------MEDIAQUERIES------------*/
+
+@media screen and (max-width: 800px){
+#page {
+    max-width: 48em;
+    min-width: 32em;
+}
+
+}
+
+@media screen and (max-width: 499px){
+#page {
+    max-width: 30em;
+    min-width: 28em;
+}
+
+#header {
+    width: 27em;
+}
+
+#contenu {
+    display: block;
+    width: 24em;
+}
+
+}
+
+
+
+@media screen and (max-width: 320px){
+#page {
+    max-width: 21em;
+    min-width: 19em;
+}
+
+#header{
+
+    width: 18em;
+    
+    a{
+    font-size: 2.3em;
+    background-size: 35px 35px;
+    }
+}
+
+#contenu {
+    width:14em;
+}
+
+#linksList li {
+    width: 14em;
+}
+
+#disconnect {
+    width: 14em;
+}
+
+#actions {
+    width: 14em;
+}
 }

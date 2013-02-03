@@ -1,5 +1,6 @@
 <p class="intro">Connecte toi&nbsp;!</p>
 <div id="formRegister">
+<h1	class="titreOutliner">Connexion</h1>
 	<?= form_open('membre/login', 
 	array( 
 			'method' => 'post'
@@ -38,10 +39,12 @@
 	//Fermeture du formulaire
 	form_close(); ?>
 	</div>
+	<h1	class="titreOutliner">Inscription</h1>
+	
 	<?= anchor(	'membre/registration',
 						's\'inscrire',
 						array(
-							'title' => 's\'inscrire',
+							'title' => 'S\'inscrire',
 							'hreflang' => 'fr',
 							'id' => 'registration'
 							)

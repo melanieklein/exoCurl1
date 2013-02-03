@@ -19,8 +19,8 @@
 			$value = array(
 				'email' => $data['email'],
 				'pseudo' => $data['pseudo'],
-				'mdp' => $data['mdp'],
-				'avatar' => $data['avatar']			
+				'mdp' => $data['mdp']/*,
+				'avatar' => $data['avatar']*/			
 				);
 			
 			$this->db->insert('membres',$value);
@@ -35,7 +35,7 @@
 			return $query->result();
 		}
 
-		function afficher($data)
+		public function afficher($data)
 		{
 			$this->db->select('*');
 			$this->db->from('membres');

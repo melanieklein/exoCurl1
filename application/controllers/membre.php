@@ -70,6 +70,8 @@
 			$this->load->model('M_Membre');
 			$this->load->helper('email');
 
+			/*******UPLOAD IMAGE _ NE FONCTIONNE PAS A 100%************/
+			/*
 			$config = array(
 				'allowed_types' => 'jpg|jpeg|png|gif',
 				'upload_path' => './uploads/',
@@ -92,12 +94,12 @@
 				);
 
 			$this->load->library('image_lib',$config);
-			$this->image_lib->resize();		
+			$this->image_lib->resize();	*/	
 
 			$data['pseudo'] = $_POST['pseudo'];
 			$data['email'] = $_POST['email'];
 			$data['mdp'] = $_POST['mdp'];
-			$data['avatar'] =  $config['name_image'];
+			/*$data['avatar'] =  $config['name_image'];*/
 					
 			$dataFiche['membres'] = $this->M_Membre->inscrire($data);
 			$name = $this->M_Membre->recupererPseudoId($data['email']);

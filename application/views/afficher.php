@@ -1,4 +1,5 @@
 <ul id="linksList">
+	<h1	class="titreOutliner">Liste des liens partagés</h1>
 <?php foreach($liens as $lien):?>	
 	<li>
 		<img src="<?= $lien->url_img; ?>"/>	

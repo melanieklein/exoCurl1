@@ -5,6 +5,7 @@
     <p><?= $description ?></p>
   </div>
 <div id="formChoose">
+  <h1 class="titreOutliner">Choix de l'image</h1>
       <?= form_open('lien/ajouterDB'); 
       //titre
       $data = array(
@@ -30,14 +31,13 @@
 
       echo form_input($data);?>
 
-      <button id="previous"><</button><button id="next">></button>
+      <button id="previous" type="button"><</button><button id="next" type="button">></button>
       <ul id="vignettes">
           <!--choisir Image-->
           <?php foreach($lienImg as $img): ?>
               <li>
               <div class="selection"><?= form_radio(array('name' => 'img',
-              'value' => $img,
-              'checked' => 'checked'
+              'value' => $img
               ))?> 
             </div>
               <?= '<img src="'.$img.'" />'; ?>

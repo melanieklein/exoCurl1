@@ -1,4 +1,4 @@
-$(function(){
+( function ( $ ) {
 	
 	//selection des images
 	var $images = $("#vignettes li"); 
@@ -53,5 +53,5 @@ $(function(){
 
 	
 	
-});
+}(jQuery));
 

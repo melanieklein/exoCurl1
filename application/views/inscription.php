@@ -1,6 +1,6 @@
 <p class="intro">Inscris toi&nbsp;!</p>
 <div id="formSignin">
-
+<h1	class="titreOutliner">Inscription au site</h1>
 	<?php if(isset($error)):?>
 	<div class="error"><?php echo $error; ?>
 	<?php endif;?>
@@ -32,8 +32,9 @@
             );
 	echo form_input($data);
 
-	//champ upload image
-	echo form_upload('userfile');
+	/*//champ upload image
+	echo form_label('Avatar', 'avatar');
+	echo form_upload('userfile');*/
 	
 	//champ mdp
 	echo form_label('Mot de passe', 'mdp');

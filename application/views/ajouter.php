@@ -1,12 +1,12 @@
 
-<?php foreach ($membres as $membre): ?>
 
-<p class="intro">Salut <?= $membre->pseudo; ?> Tu peux maintenant partager tes liens&nbsp;!</p>
-<?php endforeach; ?>
+
+<p class="intro">Salut <em><?php echo $this->session->userdata('email'); ?></em></br> Tu peux maintenant partager un lien&nbsp;!</p>
+
 <div id="formAdd">
+<h1	class="titreOutliner">Partager un lien</h1>
 <?= form_open('lien/choisir'); ?>
 <?php 
-		echo form_label('Entrez une url', 'url');
 	 	$data = array(
 	              'name'        => 'champ',
 	              'value'          => '',
@@ -28,4 +28,5 @@
 		echo form_submit($data); 
 	?>
 <?= form_close() ?>
+<p class="intro">Ou voir les <a href="http://dreamdesgn.com/ptfmelacrud/lien/afficher">liens deja ajoutes</a></p>
 </div>

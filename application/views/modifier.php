@@ -1,4 +1,5 @@
 <div id="formModify">
+  <h1 class="titreOutliner">Modification des données</h1>
     <?= form_open('lien/modifierDB'); 
     //titre
     $data = array(
